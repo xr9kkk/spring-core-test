@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fonbet
+    username: postgres
+    password: 123
+  liquibase:
+    change-log: classpath:db.changelog/db-changelog-master.yaml
