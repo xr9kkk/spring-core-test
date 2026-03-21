@@ -1,8 +1,12 @@
-package com.vsu.demo.entity;
+package com.vsu.demo.request;
+
+import jakarta.validation.constraints.Size;
 
 import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import java.util.UUID;
 
-public record CreateProfileRequest(String login, BigDecimal balance) {
+
+public record CreateProfileRequest(
+        @Size(min=3)
+        String login,
+        BigDecimal balance) {
 }

@@ -4,6 +4,6 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/fonbet
     username: postgres
-    password: 123
+    password: 1234
   liquibase:
     change-log: classpath:db/changelog/db-changelog-master.yaml
