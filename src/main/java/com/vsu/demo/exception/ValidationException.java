@@ -5,8 +5,7 @@ import com.vsu.demo.response.ErrorCode;
 public class ValidationException extends RuntimeException {
 
 
-
-    private ErrorCode errorCode;
+    private final ErrorCode errorCode;
 
     public ErrorCode getErrorCode() {
         return errorCode;
@@ -15,6 +14,5 @@ public class ValidationException extends RuntimeException {
     public ValidationException(ErrorCode errorCode) {
         this.errorCode = errorCode;
     }
-    public ValidationException(String message) {
-    }
+
 }
