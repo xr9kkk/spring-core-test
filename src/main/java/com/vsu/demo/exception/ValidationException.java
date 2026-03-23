@@ -11,7 +11,8 @@ public class ValidationException extends RuntimeException {
         return errorCode;
     }
 
-    public ValidationException(ErrorCode errorCode) {
+    public ValidationException(ErrorCode errorCode, Throwable cause) {
+        super(cause);
         this.errorCode = errorCode;
     }
 

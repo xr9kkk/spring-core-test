@@ -1,6 +1,8 @@
 package com.vsu.demo.exception;
 
 import com.vsu.demo.response.FonbetErrorResponse;
+import com.vsu.demo.response.ErrorCode;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
